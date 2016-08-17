@@ -9,5 +9,10 @@
 import Foundation
 
 struct ToDoItem {
+    init(title: String, itemDescription: String? = nil) {
+        self.title = title
+        self.itemDescription = itemDescription
+    }
     let title: String
+    let itemDescription: String?
 }
