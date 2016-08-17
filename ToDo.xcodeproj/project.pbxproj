@@ -12,7 +12,8 @@
 		3825527E1D64ACD7005C4B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3825527C1D64ACD7005C4B34 /* Main.storyboard */; };
 		382552801D64ACD7005C4B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3825527F1D64ACD7005C4B34 /* Assets.xcassets */; };
 		382552831D64ACD7005C4B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382552811D64ACD7005C4B34 /* LaunchScreen.storyboard */; };
-		3825528E1D64ACD7005C4B34 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825528D1D64ACD7005C4B34 /* ToDoTests.swift */; };
+		382552991D64C24A005C4B34 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382552981D64C24A005C4B34 /* ToDoItemTests.swift */; };
+		3825529B1D64C305005C4B34 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3825529A1D64C304005C4B34 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		382552821D64ACD7005C4B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		382552841D64ACD7005C4B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		382552891D64ACD7005C4B34 /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3825528D1D64ACD7005C4B34 /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
 		3825528F1D64ACD7005C4B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		382552981D64C24A005C4B34 /* ToDoItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
+		3825529A1D64C304005C4B34 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				382552781D64ACD7005C4B34 /* AppDelegate.swift */,
-				3825527A1D64ACD7005C4B34 /* ViewController.swift */,
-				3825527C1D64ACD7005C4B34 /* Main.storyboard */,
+				3825529D1D64C30F005C4B34 /* Controller */,
+				3825529E1D64C31A005C4B34 /* View */,
 				3825527F1D64ACD7005C4B34 /* Assets.xcassets */,
-				382552811D64ACD7005C4B34 /* LaunchScreen.storyboard */,
 				382552841D64ACD7005C4B34 /* Info.plist */,
+				3825529C1D64C309005C4B34 /* Model */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -90,10 +92,35 @@
 		3825528C1D64ACD7005C4B34 /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3825528D1D64ACD7005C4B34 /* ToDoTests.swift */,
 				3825528F1D64ACD7005C4B34 /* Info.plist */,
+				382552981D64C24A005C4B34 /* ToDoItemTests.swift */,
 			);
 			path = ToDoTests;
+			sourceTree = "<group>";
+		};
+		3825529C1D64C309005C4B34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3825529A1D64C304005C4B34 /* ToDoItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3825529D1D64C30F005C4B34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3825527A1D64ACD7005C4B34 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3825529E1D64C31A005C4B34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3825527C1D64ACD7005C4B34 /* Main.storyboard */,
+				382552811D64ACD7005C4B34 /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +227,7 @@
 			files = (
 				3825527B1D64ACD7005C4B34 /* ViewController.swift in Sources */,
 				382552791D64ACD7005C4B34 /* AppDelegate.swift in Sources */,
+				3825529B1D64C305005C4B34 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3825528E1D64ACD7005C4B34 /* ToDoTests.swift in Sources */,
+				382552991D64C24A005C4B34 /* ToDoItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +423,7 @@
 				382552941D64ACD7005C4B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		382552951D64ACD7005C4B34 /* Build configuration list for PBXNativeTarget "ToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +432,7 @@
 				382552971D64ACD7005C4B34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
